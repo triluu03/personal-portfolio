@@ -8,22 +8,28 @@ import Education from './components/Education'
 import Awards from './components/Awards'
 import Footer from './components/Footer'
 
-const theme = createTheme({
+export const appTheme = createTheme({
     palette: {
         primary: {
             main: '#002B5B',
-            light: '#2B4865',
+            contrastText: '#FFFFFF',
         },
         secondary: {
+            main: '#2B4865',
+            contrastText: '#FFFFFF',
+        },
+        cardBackground: {
             main: '#256D85',
-            light: '#8FE3CF',
+        },
+        cardTitle: {
+            main: '#8FE3CF',
         },
     },
 })
 
 const App = () => {
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={appTheme}>
             <NavBar />
             <Header />
             <About />
