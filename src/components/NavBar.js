@@ -1,6 +1,8 @@
 import { Box, Typography, AppBar, Toolbar, Button } from '@mui/material'
 import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard'
 
+import './components.css'
+
 const NavBar = () => {
     return (
         <Box sx={{ width: '100vw', flexGrow: 1 }}>
@@ -13,23 +15,40 @@ const NavBar = () => {
                     <Typography
                         sx={{ fontFamily: 'monospace', flexGrow: 1 }}
                         variant='h6'
+                        component='div'
                     >
                         Luu Duc Tri
                     </Typography>
 
-                    <Button color='cardTitle' variant='outlined' sx={{ m: 1 }}>
+                    <Button
+                        color='cardTitle'
+                        variant='outlined'
+                        sx={{ m: 1 }}
+                        className='button'
+                    >
                         Home
                     </Button>
-                    <Button color='cardTitle' variant='outlined' sx={{ m: 1 }}>
+                    <Button
+                        color='cardTitle'
+                        variant='outlined'
+                        sx={{ m: 1 }}
+                        className='button'
+                    >
                         About
                     </Button>
-                    <Button color='cardTitle' variant='outlined' sx={{ m: 1 }}>
+                    <Button
+                        color='cardTitle'
+                        variant='outlined'
+                        sx={{ m: 1 }}
+                        className='button'
+                    >
                         Skills
                     </Button>
                     <Button
                         color='cardTitle'
                         variant='outlined'
                         sx={{ m: 1, mr: '2.5%' }}
+                        className='button'
                     >
                         Contact
                     </Button>
