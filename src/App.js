@@ -24,6 +24,12 @@ export const appTheme = createTheme({
         cardTitle: {
             main: '#8FE3CF',
         },
+        textPrimary: {
+            main: '#FFFFFF',
+        },
+        textSecondary: {
+            main: '#808080',
+        },
     },
 })
 
