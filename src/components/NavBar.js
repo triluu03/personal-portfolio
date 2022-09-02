@@ -3,7 +3,7 @@ import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard'
 
 const NavBar = () => {
     return (
-        <Box sx={{ width: '100vw', height: 95, flexGrow: 1 }}>
+        <Box sx={{ width: '100vw', flexGrow: 1 }}>
             <AppBar position='sticky' color='primary'>
                 <Toolbar>
                     <DeveloperBoardIcon
