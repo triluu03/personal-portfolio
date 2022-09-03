@@ -19,31 +19,53 @@ const Header = () => {
                 width: '100vw',
                 height: 500,
                 textAlign: 'center',
-                bgcolor: '#2B4865',
+                bgcolor: 'secondary.main',
             }}
             style={styles}
         >
-            <Typography variant='h5' color='#FFFFFF' component='div'>
+            <Typography
+                variant='h5'
+                color='textPrimary.main'
+                component='div'
+                fontFamily='monospace'
+            >
                 Portfolio
             </Typography>
-            <Typography variant='h2' color='#FFFFFF' component='div'>
-                I'm Luu Duc Tri
+            <Typography
+                variant='h2'
+                color='textPrimary.main'
+                component='div'
+                fontFamily='monospace'
+            >
+                Luu Duc Tri
             </Typography>
 
             <Box>
                 <Button
                     color='cardTitle'
                     variant='outlined'
-                    sx={{ m: 2, borderWidth: 3 }}
-                    className='button'
+                    sx={{
+                        m: 2,
+                        borderWidth: 3,
+                        ':hover': {
+                            bgcolor: 'cardTitle.main',
+                            color: 'black',
+                        },
+                    }}
                 >
                     Learn More
                 </Button>
                 <Button
                     color='cardTitle'
                     variant='outlined'
-                    sx={{ m: 2, borderWidth: 3 }}
-                    className='button'
+                    sx={{
+                        m: 2,
+                        borderWidth: 3,
+                        ':hover': {
+                            bgcolor: 'cardTitle.main',
+                            color: 'black',
+                        },
+                    }}
                 >
                     Contact
                 </Button>

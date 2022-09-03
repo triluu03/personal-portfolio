@@ -23,7 +23,13 @@ const NavBar = () => {
                     <Button
                         color='cardTitle'
                         variant='outlined'
-                        sx={{ m: 1 }}
+                        sx={{
+                            m: 1,
+                            ':hover': {
+                                bgcolor: 'cardTitle.main',
+                                color: 'black',
+                            },
+                        }}
                         className='button'
                     >
                         Home
@@ -31,7 +37,13 @@ const NavBar = () => {
                     <Button
                         color='cardTitle'
                         variant='outlined'
-                        sx={{ m: 1 }}
+                        sx={{
+                            m: 1,
+                            ':hover': {
+                                bgcolor: 'cardTitle.main',
+                                color: 'black',
+                            },
+                        }}
                         className='button'
                     >
                         About
@@ -39,7 +51,13 @@ const NavBar = () => {
                     <Button
                         color='cardTitle'
                         variant='outlined'
-                        sx={{ m: 1 }}
+                        sx={{
+                            m: 1,
+                            ':hover': {
+                                bgcolor: 'cardTitle.main',
+                                color: 'black',
+                            },
+                        }}
                         className='button'
                     >
                         Skills
@@ -47,7 +65,14 @@ const NavBar = () => {
                     <Button
                         color='cardTitle'
                         variant='outlined'
-                        sx={{ m: 1, mr: '2.5%' }}
+                        sx={{
+                            m: 1,
+                            mr: '2.5%',
+                            ':hover': {
+                                bgcolor: 'cardTitle.main',
+                                color: 'black',
+                            },
+                        }}
                         className='button'
                     >
                         Contact
