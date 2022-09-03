@@ -1,4 +1,5 @@
-import { Box, Typography, Button } from '@mui/material'
+import { Box, Typography /*Button*/ } from '@mui/material'
+import { TypeAnimation } from 'react-type-animation'
 
 // import Image from '../images/header-background2.jpeg'
 
@@ -40,36 +41,23 @@ const Header = () => {
                 Luu Duc Tri
             </Typography>
 
-            <Box>
-                <Button
-                    color='cardTitle'
-                    variant='outlined'
-                    sx={{
-                        m: 2,
-                        borderWidth: 3,
-                        ':hover': {
-                            bgcolor: 'cardTitle.main',
-                            color: 'black',
-                        },
-                    }}
-                >
-                    Learn More
-                </Button>
-                <Button
-                    color='cardTitle'
-                    variant='outlined'
-                    sx={{
-                        m: 2,
-                        borderWidth: 3,
-                        ':hover': {
-                            bgcolor: 'cardTitle.main',
-                            color: 'black',
-                        },
-                    }}
-                >
-                    Contact
-                </Button>
-            </Box>
+            <Typography color='cardTitle.main' variant='h5'>
+                <b>
+                    <TypeAnimation
+                        sequence={[
+                            `I'm a student `,
+                            1000,
+                            `I'm a self-learner `,
+                            1000,
+                            `I'm a full stack developer `,
+                            1000,
+                            `I'm a programmer `,
+                            1000,
+                        ]}
+                        repeat={Infinity}
+                    />
+                </b>
+            </Typography>
         </Box>
     )
 }
