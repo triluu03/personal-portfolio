@@ -35,11 +35,12 @@ const About = () => {
                 <Typography variant='h6' component='div' color='cardTitle.main'>
                     Bachelor of Science
                 </Typography>
-                <Typography color='textSecondary.main'>
-                    I am a self-learner who enjoys solving algorithmic problems.
-                    My aspiration is applying computer science skills, such as
-                    algorithms and data analytics, into designing products and
-                    making improvements based on data.
+                <Typography color='textSecondary.main' sx={{ mt: 2 }}>
+                    My major in the university is Computer Science and Data
+                    Science. I am a self-learner who enjoys solving algorithmic
+                    problems. My aspiration is applying computer science skills,
+                    such as algorithms and data analytics, into designing
+                    products and making improvements based on data.
                 </Typography>
                 <Button
                     variant='outlined'
@@ -50,7 +51,7 @@ const About = () => {
                             color: 'black',
                         },
                         m: 1,
-                        mt: 2,
+                        mt: 3,
                     }}
                 >
                     download CV
