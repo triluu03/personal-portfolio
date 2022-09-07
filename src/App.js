@@ -3,8 +3,9 @@ import { ThemeProvider, createTheme } from '@mui/material'
 import NavBar from './components/NavBar'
 import Header from './components/Header'
 import About from './components/About'
-import Skills from './components/Skills'
 import Education from './components/Education'
+import Projects from './components/Projects'
+import Skills from './components/Skills'
 import Awards from './components/Awards'
 import Footer from './components/Footer'
 
@@ -40,6 +41,7 @@ const App = () => {
             <Header />
             <About />
             <Education />
+            <Projects />
             <Skills />
             <Awards />
             <Footer />
