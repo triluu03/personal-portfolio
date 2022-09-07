@@ -1,9 +1,5 @@
-import { Box, Typography /*Button*/ } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import { TypeAnimation } from 'react-type-animation'
-
-// import Image from '../images/header-background2.jpeg'
-
-import './components.css'
 
 const styles = {
     // backgroundImage: `url(${Image})`,

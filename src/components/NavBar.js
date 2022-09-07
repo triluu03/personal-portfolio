@@ -1,8 +1,6 @@
 import { Box, Typography, AppBar, Toolbar, Button } from '@mui/material'
 import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard'
 
-import './components.css'
-
 const NavBar = () => {
     return (
         <Box sx={{ width: '100vw', flexGrow: 1 }}>

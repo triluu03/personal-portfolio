@@ -17,10 +17,10 @@ const Education = () => {
 
     return (
         <Box
-            sx={{ width: '100vw', height: 700, bgcolor: 'secondary.main' }}
+            sx={{ width: '100vw', height: 'auto', bgcolor: 'secondary.main' }}
             style={style}
         >
-            <Box sx={{ m: '5%', flexGrow: 1 }}>
+            <Box sx={{ m: '5%', flexGrow: 1, maxWidth: '40%' }}>
                 <Typography variant='h3' color='textPrimary.main'>
                     Educations
                 </Typography>
@@ -44,6 +44,14 @@ const Education = () => {
                             >
                                 <b>Secondary School</b>
                             </Typography>
+                            <Typography
+                                color='textSecondary.main'
+                                sx={{ mt: 1 }}
+                            >
+                                In Secondary School, an Entrance Exam, consisted
+                                of Math and Literature, was designed to look for
+                                the best 200 students that year.
+                            </Typography>
                         </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
@@ -66,6 +74,11 @@ const Education = () => {
                             >
                                 <b>High School</b>
                             </Typography>
+                            <Typography color='textSecondary.main'>
+                                I took an Entrance Exam designed by the school
+                                and got a place to study in the Mathematics
+                                Major class.
+                            </Typography>
                         </TimelineContent>
                     </TimelineItem>
                     <TimelineItem>
@@ -87,12 +100,16 @@ const Education = () => {
                             >
                                 <b>University</b>
                             </Typography>
+                            <Typography color='textSecondary.main'>
+                                I am following 2 study tracks in the university:
+                                Mathematics and Computer Science.
+                            </Typography>
                         </TimelineContent>
                     </TimelineItem>
                 </Timeline>
             </Box>
 
-            <Box sx={{ m: '5%', flexGrow: 1 }}>
+            <Box sx={{ m: '5%', flexGrow: 1, maxWidth: '40%' }}>
                 <Typography variant='h3' color='textPrimary.main'>
                     Extra-Curriculum
                 </Typography>
@@ -137,6 +154,12 @@ const Education = () => {
                                 sx={{ mt: 1 }}
                             >
                                 <b>High School</b>
+                            </Typography>
+                            <Typography color='textSecondary.main'>
+                                In High School, we had to take an Entrance Exam
+                                desinged specifically for each Major that we
+                                wanted to study. I took the Entrance Exam and
+                                got a place in Math Major class.
                             </Typography>
                         </TimelineContent>
                     </TimelineItem>
