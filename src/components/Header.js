@@ -19,6 +19,7 @@ const Header = () => {
                 bgcolor: 'secondary.main',
             }}
             style={styles}
+            id='home'
         >
             <Typography
                 variant='h5'

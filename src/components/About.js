@@ -16,6 +16,7 @@ const About = () => {
         <Box
             sx={{ width: '100vw', height: 'auto', bgcolor: 'primary.main' }}
             style={style}
+            id='about'
         >
             <Box sx={{ m: '5%', width: '20%' }}>
                 <img

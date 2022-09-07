@@ -1,10 +1,21 @@
-import { Box, Typography, AppBar, Toolbar, Button } from '@mui/material'
+import { Typography, AppBar, Toolbar, Button, Slide } from '@mui/material'
+import useScrollTrigger from '@mui/material/useScrollTrigger'
+
 import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard'
+
+const HideOnScroll = ({ children }) => {
+    const trigger = useScrollTrigger()
+    return (
+        <Slide appear={false} direction='down' in={!trigger}>
+            {children}
+        </Slide>
+    )
+}
 
 const NavBar = () => {
     return (
-        <Box sx={{ width: '100vw', flexGrow: 1 }}>
-            <AppBar position='sticky' color='primary'>
+        <HideOnScroll>
+            <AppBar position='sticky' color='primary' sx={{ width: '100vw' }}>
                 <Toolbar>
                     <DeveloperBoardIcon
                         fontSize='large'
@@ -29,6 +40,7 @@ const NavBar = () => {
                             },
                         }}
                         className='button'
+                        href='#home'
                     >
                         Home
                     </Button>
@@ -43,6 +55,7 @@ const NavBar = () => {
                             },
                         }}
                         className='button'
+                        href='#about'
                     >
                         About
                     </Button>
@@ -57,6 +70,7 @@ const NavBar = () => {
                             },
                         }}
                         className='button'
+                        href='#skills'
                     >
                         Skills
                     </Button>
@@ -72,12 +86,13 @@ const NavBar = () => {
                             },
                         }}
                         className='button'
+                        href='#contact'
                     >
                         Contact
                     </Button>
                 </Toolbar>
             </AppBar>
-        </Box>
+        </HideOnScroll>
     )
 }
 
