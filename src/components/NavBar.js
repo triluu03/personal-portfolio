@@ -70,9 +70,9 @@ const NavBar = () => {
                             },
                         }}
                         className='button'
-                        href='#skills'
+                        href='#projects'
                     >
-                        Skills
+                        Details
                     </Button>
                     <Button
                         color='cardTitle'
