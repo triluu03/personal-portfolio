@@ -1,7 +1,5 @@
 import { Box, Typography, Button } from '@mui/material'
 
-import Avatar from '../images/avatar.jpeg'
-
 const About = () => {
     const style = {
         display: 'flex',
@@ -10,16 +8,22 @@ const About = () => {
     }
 
     const image = {
-        backgroundImage: `url(${Avatar})`,
-        backgroundSize: 'cover',
+        maxWidth: '100%',
+        height: 'auto',
     }
 
     return (
         <Box
-            sx={{ width: '100vw', height: 500, bgcolor: 'primary.main' }}
+            sx={{ width: '100vw', height: 'auto', bgcolor: 'primary.main' }}
             style={style}
         >
-            <Box sx={{ m: '5%', width: '20%' }} style={image} />
+            <Box sx={{ m: '5%', width: '20%' }}>
+                <img
+                    src={require('../images/avatar.jpeg')}
+                    alt='avatar'
+                    style={image}
+                />
+            </Box>
             <Box sx={{ m: '5%', maxWidth: '30%' }}>
                 <Typography
                     variant='h3'

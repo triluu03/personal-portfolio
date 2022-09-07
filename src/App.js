@@ -39,8 +39,8 @@ const App = () => {
             <NavBar />
             <Header />
             <About />
-            <Skills />
             <Education />
+            <Skills />
             <Awards />
             <Footer />
         </ThemeProvider>
