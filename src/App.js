@@ -6,7 +6,7 @@ import About from './components/About'
 import Education from './components/Education'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
-import Awards from './components/Awards'
+// import Awards from './components/Awards'
 import Footer from './components/Footer'
 
 export const appTheme = createTheme({
@@ -43,7 +43,7 @@ const App = () => {
             <Education />
             <Projects />
             <Skills />
-            <Awards />
+            {/*<Awards />*/}
             <Footer />
         </ThemeProvider>
     )
