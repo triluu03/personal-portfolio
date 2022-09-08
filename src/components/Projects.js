@@ -11,6 +11,7 @@ const Projects = () => {
                 flexDirection: 'column',
                 pb: '5%',
             }}
+            id='projects'
         >
             <Box
                 sx={{
@@ -43,15 +44,17 @@ const Projects = () => {
                 <ul>
                     <Typography
                         component='li'
-                        variant='h5'
+                        variant='h6'
                         color='textSecondary.main'
+                        sx={{ maxWidth: '70%' }}
                     >
                         <b>When:</b> August 2022
                     </Typography>
                     <Typography
                         component='li'
-                        variant='h5'
+                        variant='h6'
                         color='textSecondary.main'
+                        sx={{ maxWidth: '70%' }}
                     >
                         <b>Where:</b> You guys can check the source code of this
                         app{' '}
@@ -64,10 +67,14 @@ const Projects = () => {
                     </Typography>
                     <Typography
                         component='li'
-                        variant='h5'
+                        variant='h6'
                         color='textSecondary.main'
+                        sx={{ maxWidth: '70%' }}
                     >
-                        <b>What is this project:</b>
+                        <b>What is this project:</b> This is my first project
+                        using React to build. The app is a platform for users to
+                        suggest books to each other and share their thoughts
+                        about some specific books.
                     </Typography>
                 </ul>
             </Box>
