@@ -1,4 +1,6 @@
-import { Box, Typography, Button } from '@mui/material'
+import { Box, Typography, Button, Link } from '@mui/material'
+
+import CV from '../PDF_files/Luu_DucTri_CV.pdf'
 
 const About = () => {
     const style = {
@@ -58,6 +60,9 @@ const About = () => {
                         m: 1,
                         mt: 3,
                     }}
+                    component={Link}
+                    href={CV}
+                    target='_blank'
                 >
                     download CV
                 </Button>

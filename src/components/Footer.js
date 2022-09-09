@@ -30,7 +30,11 @@ const Footer = () => {
             </Box>
             <Box sx={{ mt: '1.5%', textAlign: 'center' }}>
                 <Typography>
-                    <a href='https://www.linkedin.com/in/triluu03/'>
+                    <a
+                        href='https://www.linkedin.com/in/triluu03/'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
                         <LinkedInIcon
                             color='textPrimary'
                             sx={{
@@ -41,7 +45,11 @@ const Footer = () => {
                             }}
                         />
                     </a>{' '}
-                    <a href='https://github.com/triluu03'>
+                    <a
+                        href='https://github.com/triluu03'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
                         <GitHubIcon
                             color='textPrimary'
                             sx={{
