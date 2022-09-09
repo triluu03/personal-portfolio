@@ -14,7 +14,7 @@ const Header = () => {
         <Box
             sx={{
                 width: '100vw',
-                height: 500,
+                height: 550,
                 textAlign: 'center',
                 bgcolor: 'secondary.main',
             }}
