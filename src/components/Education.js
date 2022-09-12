@@ -202,8 +202,7 @@ const Education = () => {
                                 I serve as vice-member of student
                                 representatives. We are chosen to contribute to
                                 the development of our faculty (Faculty of
-                                Science), such as voting vice-deans or receiving
-                                feedbacks from students.
+                                Science).
                             </Typography>
                         </TimelineContent>
                     </TimelineItem>
