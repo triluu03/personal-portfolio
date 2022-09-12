@@ -1,9 +1,39 @@
 import { Box, Typography } from '@mui/material'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { FaDatabase } from 'react-icons/fa'
+import { SiJavascript, SiPython, SiReact } from 'react-icons/si'
+import { DiGoogleAnalytics } from 'react-icons/di'
 
 const Skills = () => {
+    const styles = {
+        skillContainer: {
+            border: 1,
+            borderRadius: '10px',
+            width: 'auto',
+            height: 'auto',
+            m: '1%',
+            p: '1.5%',
+        },
+        skillBox: {
+            width: 100,
+            height: 100,
+            borderRadius: '50%',
+            border: 1,
+            // bgcolor: '#B8B8B8',
+            mb: 1,
+            display: 'flex',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            alignItems: 'center',
+            transitionDuration: '0.5s',
+        },
+        captionBox: {
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+        },
+    }
+
     return (
         <Box
             sx={{
@@ -36,74 +66,86 @@ const Skills = () => {
                     justifyContent: 'center',
                 }}
             >
-                <Box
-                    sx={{
-                        border: 'solid',
-                        width: 'auto',
-                        height: 'auto',
-                        m: '1%',
-                        p: '1%',
-                    }}
-                >
+                <Box sx={{ ...styles.skillContainer }}>
                     <Box
                         sx={{
-                            width: 100,
-                            height: 100,
-                            border: 'solid',
-                            mb: 1,
-                            display: 'flex',
-                            justifyContent: 'center',
-                            flexDirection: 'column',
-                            alignItems: 'center',
+                            ...styles.skillBox,
+                            ':hover': {
+                                bgcolor: '#61dafb',
+                                transform: 'rotate(360deg)',
+                            },
                         }}
                     >
-                        <FontAwesomeIcon icon={faCoffee} />
+                        <SiReact fontSize='2em' />
                     </Box>
-                    <Typography>React</Typography>
+                    <Box sx={{ ...styles.captionBox }}>
+                        <Typography variant='h6'>React</Typography>
+                    </Box>
                 </Box>
-                <Box
-                    sx={{
-                        border: 'solid',
-                        width: 100,
-                        height: 100,
-                        m: '1%',
-                        p: '1%',
-                    }}
-                >
-                    <Typography>JavaScript</Typography>
+                <Box sx={{ ...styles.skillContainer }}>
+                    <Box
+                        sx={{
+                            ...styles.skillBox,
+                            ':hover': {
+                                bgcolor: '#F0DB4F',
+                                transform: 'rotate(360deg)',
+                            },
+                        }}
+                    >
+                        <SiJavascript fontSize='2em' />
+                    </Box>
+                    <Box sx={{ ...styles.captionBox }}>
+                        <Typography variant='h6'>JavaScript</Typography>
+                    </Box>
                 </Box>
-                <Box
-                    sx={{
-                        border: 'solid',
-                        width: 100,
-                        height: 100,
-                        m: '1%',
-                        p: '1%',
-                    }}
-                >
-                    <Typography>Python</Typography>
+                <Box sx={{ ...styles.skillContainer }}>
+                    <Box
+                        sx={{
+                            ...styles.skillBox,
+                            ':hover': {
+                                background:
+                                    'linear-gradient(to right bottom, rgba(75,139,190,1) 31%, rgba(255,232,115,1) 74%, rgba(255,212,59,1) 100%)',
+                                transform: 'rotate(360deg)',
+                            },
+                        }}
+                    >
+                        <SiPython fontSize='2em' />
+                    </Box>
+                    <Box sx={{ ...styles.captionBox }}>
+                        <Typography variant='h6'>Python</Typography>
+                    </Box>
                 </Box>
-                <Box
-                    sx={{
-                        border: 'solid',
-                        width: 100,
-                        height: 100,
-                        m: '1%',
-                        p: '1%',
-                    }}
-                >
-                    <Typography>R</Typography>
+                <Box sx={{ ...styles.skillContainer }}>
+                    <Box
+                        sx={{
+                            ...styles.skillBox,
+                            ':hover': {
+                                bgcolor: '#276dc3',
+                                transform: 'rotate(360deg)',
+                            },
+                        }}
+                    >
+                        <DiGoogleAnalytics fontSize='2.5em' />
+                    </Box>
+                    <Box sx={{ ...styles.captionBox }}>
+                        <Typography variant='h6'>R</Typography>
+                    </Box>
                 </Box>
-                <Box
-                    sx={{
-                        border: 'solid',
-                        width: 100,
-                        height: 100,
-                        m: '1%',
-                        p: '1%',
-                    }}
-                >
-                    <Typography>SQL</Typography>
+                <Box sx={{ ...styles.skillContainer }}>
+                    <Box
+                        sx={{
+                            ...styles.skillBox,
+                            ':hover': {
+                                bgcolor: '#336791',
+                                transform: 'rotate(360deg)',
+                            },
+                        }}
+                    >
+                        <FaDatabase fontSize='2em' />
+                    </Box>
+                    <Box sx={{ ...styles.captionBox }}>
+                        <Typography variant='h6'>SQL</Typography>
+                    </Box>
                 </Box>
             </Box>
         </Box>
