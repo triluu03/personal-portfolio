@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/personal-portfolio/static/js/main.1c856a17.js",
+    "static/media/Can_you_prove_that_you're_a_human.pdf": "/personal-portfolio/static/media/Can_you_prove_that_you're_a_human.1ea19a92807aac214d8f.pdf",
+    "static/media/avatar.jpeg": "/personal-portfolio/static/media/avatar.b5271b0d44068b87ab31.jpeg",
+    "static/media/Luu_DucTri_CV.pdf": "/personal-portfolio/static/media/Luu_DucTri_CV.27859891f49e16a436e5.pdf",
+    "index.html": "/personal-portfolio/index.html",
+    "main.1c856a17.js.map": "/personal-portfolio/static/js/main.1c856a17.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.1c856a17.js"
+  ]
+}
