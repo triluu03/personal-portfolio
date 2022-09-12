@@ -13,6 +13,14 @@ const HideOnScroll = ({ children }) => {
 }
 
 const NavBar = () => {
+    const buttonStyles = {
+        m: 1,
+        ':hover': {
+            bgcolor: 'cardTitle.main',
+            color: 'black',
+        },
+    }
+
     return (
         <HideOnScroll>
             <AppBar position='sticky' color='primary' sx={{ width: '100vw' }}>
@@ -32,14 +40,7 @@ const NavBar = () => {
                     <Button
                         color='cardTitle'
                         variant='outlined'
-                        sx={{
-                            m: 1,
-                            ':hover': {
-                                bgcolor: 'cardTitle.main',
-                                color: 'black',
-                            },
-                        }}
-                        className='button'
+                        sx={{ ...buttonStyles }}
                         href='#home'
                     >
                         Home
@@ -47,14 +48,7 @@ const NavBar = () => {
                     <Button
                         color='cardTitle'
                         variant='outlined'
-                        sx={{
-                            m: 1,
-                            ':hover': {
-                                bgcolor: 'cardTitle.main',
-                                color: 'black',
-                            },
-                        }}
-                        className='button'
+                        sx={{ ...buttonStyles }}
                         href='#about'
                     >
                         About
@@ -62,14 +56,7 @@ const NavBar = () => {
                     <Button
                         color='cardTitle'
                         variant='outlined'
-                        sx={{
-                            m: 1,
-                            ':hover': {
-                                bgcolor: 'cardTitle.main',
-                                color: 'black',
-                            },
-                        }}
-                        className='button'
+                        sx={{ ...buttonStyles }}
                         href='#projects'
                     >
                         Details
@@ -78,14 +65,9 @@ const NavBar = () => {
                         color='cardTitle'
                         variant='outlined'
                         sx={{
-                            m: 1,
+                            ...buttonStyles,
                             mr: '2.5%',
-                            ':hover': {
-                                bgcolor: 'cardTitle.main',
-                                color: 'black',
-                            },
                         }}
-                        className='button'
                         href='#contact'
                     >
                         Contact
