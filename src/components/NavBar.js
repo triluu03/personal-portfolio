@@ -21,6 +21,10 @@ const NavBar = () => {
         },
     }
 
+    const scrollToComponent = (id) => {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+    }
+
     return (
         <HideOnScroll>
             <AppBar position='sticky' color='primary' sx={{ width: '100vw' }}>
@@ -41,7 +45,7 @@ const NavBar = () => {
                         color='cardTitle'
                         variant='outlined'
                         sx={{ ...buttonStyles }}
-                        href='#home'
+                        onClick={() => scrollToComponent('home')}
                     >
                         Home
                     </Button>
@@ -49,7 +53,7 @@ const NavBar = () => {
                         color='cardTitle'
                         variant='outlined'
                         sx={{ ...buttonStyles }}
-                        href='#about'
+                        onClick={() => scrollToComponent('about')}
                     >
                         About
                     </Button>
@@ -57,7 +61,7 @@ const NavBar = () => {
                         color='cardTitle'
                         variant='outlined'
                         sx={{ ...buttonStyles }}
-                        href='#projects'
+                        onClick={() => scrollToComponent('projects')}
                     >
                         Details
                     </Button>
@@ -68,7 +72,7 @@ const NavBar = () => {
                             ...buttonStyles,
                             mr: '2.5%',
                         }}
-                        href='#contact'
+                        onClick={() => scrollToComponent('contact')}
                     >
                         Contact
                     </Button>

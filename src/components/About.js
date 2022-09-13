@@ -12,6 +12,7 @@ const About = () => {
     const image = {
         maxWidth: '100%',
         height: 'auto',
+        borderRadius: '16px',
     }
 
     return (
