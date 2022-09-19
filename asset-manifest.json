@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/personal-portfolio/static/js/main.42b0d9ba.js",
+    "main.js": "/personal-portfolio/static/js/main.4f17bc13.js",
     "static/media/Can_you_prove_that_you're_a_human.pdf": "/personal-portfolio/static/media/Can_you_prove_that_you're_a_human.1ea19a92807aac214d8f.pdf",
     "static/media/avatar.jpeg": "/personal-portfolio/static/media/avatar.b5271b0d44068b87ab31.jpeg",
     "static/media/Luu_DucTri_CV.pdf": "/personal-portfolio/static/media/Luu_DucTri_CV.27859891f49e16a436e5.pdf",
     "index.html": "/personal-portfolio/index.html",
-    "main.42b0d9ba.js.map": "/personal-portfolio/static/js/main.42b0d9ba.js.map"
+    "main.4f17bc13.js.map": "/personal-portfolio/static/js/main.4f17bc13.js.map"
   },
   "entrypoints": [
-    "static/js/main.42b0d9ba.js"
+    "static/js/main.4f17bc13.js"
   ]
 }
