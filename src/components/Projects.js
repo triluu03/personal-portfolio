@@ -1,6 +1,6 @@
-import { Box, Typography, Link } from '@mui/material'
+import { Box, Typography, Link } from '@mui/material';
 
-import BlogPost from "../PDF_files/Can_you_prove_that_you're_a_human.pdf"
+import BlogPost from "../PDF_files/Can_you_prove_that_you're_a_human.pdf";
 
 const Projects = () => {
     return (
@@ -41,7 +41,58 @@ const Projects = () => {
                 }}
             >
                 <Typography variant='h4' color='textPrimary.main'>
-                    Personal Book (Library) App
+                    Songsite
+                </Typography>
+                <ul>
+                    <Typography
+                        component='li'
+                        variant='h6'
+                        color='textSecondary.main'
+                        sx={{ maxWidth: '70%' }}
+                    >
+                        <b>When:</b>{' '}
+                        <i>
+                            <b>still being built</b>
+                        </i>
+                    </Typography>
+                    <Typography
+                        component='li'
+                        variant='h6'
+                        color='textSecondary.main'
+                        sx={{ maxWidth: '70%' }}
+                    >
+                        <b>Where:</b> You guys can check the source code of this
+                        app{' '}
+                        <Link
+                            href='https://github.com/triluu03/songsite'
+                            target='_blank'
+                            color='cardTitle.main'
+                        >
+                            here.
+                        </Link>
+                    </Typography>
+                    <Typography
+                        component='li'
+                        variant='h6'
+                        color='textSecondary.main'
+                        sx={{ maxWidth: '70%' }}
+                    >
+                        <b>What is this project:</b> I'm currently building this
+                        using React, Redux, TypeScript, and Spotify API.{' '}
+                    </Typography>
+                </ul>
+            </Box>
+            <Box
+                sx={{
+                    display: 'flex',
+                    width: '100%',
+                    justifyContent: 'left',
+                    flexDirection: 'column',
+                    ml: '6%',
+                }}
+            >
+                <Typography variant='h4' color='textPrimary.main'>
+                    BookApp
                 </Typography>
                 <ul>
                     <Typography
@@ -138,7 +189,7 @@ const Projects = () => {
                 </ul>
             </Box>
         </Box>
-    )
-}
+    );
+};
 
-export default Projects
+export default Projects;
