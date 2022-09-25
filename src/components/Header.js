@@ -2,8 +2,6 @@ import { Box, Typography } from '@mui/material'
 import { TypeAnimation } from 'react-type-animation'
 
 const styles = {
-    // backgroundImage: `url(${Image})`,
-    // backgroundSize: 'cover',
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
