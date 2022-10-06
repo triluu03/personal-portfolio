@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material'
 
 import { FaDatabase } from 'react-icons/fa'
-import { SiJavascript, SiPython, SiReact } from 'react-icons/si'
+import { SiJavascript, SiPython, SiReact, SiTypescript } from 'react-icons/si'
 import { DiGoogleAnalytics } from 'react-icons/di'
 
 const Skills = () => {
@@ -103,6 +103,22 @@ const Skills = () => {
                         sx={{
                             ...styles.skillBox,
                             ':hover': {
+                                bgcolor: '#007acc',
+                                transform: 'rotate(360deg)',
+                            },
+                        }}
+                    >
+                        <SiTypescript fontSize='2em' />
+                    </Box>
+                    <Box sx={{ ...styles.captionBox }}>
+                        <Typography variant='h6'>TypeScript</Typography>
+                    </Box>
+                </Box>
+                <Box sx={{ ...styles.skillContainer }}>
+                    <Box
+                        sx={{
+                            ...styles.skillBox,
+                            ':hover': {
                                 background:
                                     'linear-gradient(to right bottom, rgba(75,139,190,1) 31%, rgba(255,232,115,1) 74%, rgba(255,212,59,1) 100%)',
                                 transform: 'rotate(360deg)',
@@ -115,7 +131,7 @@ const Skills = () => {
                         <Typography variant='h6'>Python</Typography>
                     </Box>
                 </Box>
-                <Box sx={{ ...styles.skillContainer }}>
+                {/* <Box sx={{ ...styles.skillContainer }}>
                     <Box
                         sx={{
                             ...styles.skillBox,
@@ -130,7 +146,7 @@ const Skills = () => {
                     <Box sx={{ ...styles.captionBox }}>
                         <Typography variant='h6'>R</Typography>
                     </Box>
-                </Box>
+                </Box> */}
                 <Box sx={{ ...styles.skillContainer }}>
                     <Box
                         sx={{

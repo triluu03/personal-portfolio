@@ -1,8 +1,14 @@
-import { Box, Typography, Link } from '@mui/material';
+import { Box, Typography, Link } from '@mui/material'
 
-import BlogPost from "../PDF_files/Can_you_prove_that_you're_a_human.pdf";
+import BlogPost from "../PDF_files/Can_you_prove_that_you're_a_human.pdf"
 
 const Projects = () => {
+    const image = {
+        maxWidth: '100%',
+        height: 'auto',
+        borderRadius: '16px',
+    }
+
     return (
         <Box
             sx={{
@@ -27,6 +33,7 @@ const Projects = () => {
                     component='div'
                     color='textPrimary.main'
                     sx={{ mt: '5%', mb: '3.5%' }}
+                    fontSize='3.5em'
                 >
                     My Projects
                 </Typography>
@@ -40,7 +47,7 @@ const Projects = () => {
                     ml: '6%',
                 }}
             >
-                <Typography variant='h4' color='textPrimary.main'>
+                <Typography variant='h3' color='textPrimary.main'>
                     Songsite
                 </Typography>
                 <ul>
@@ -50,10 +57,7 @@ const Projects = () => {
                         color='textSecondary.main'
                         sx={{ maxWidth: '70%' }}
                     >
-                        <b>When:</b>{' '}
-                        <i>
-                            <b>still being built</b>
-                        </i>
+                        <b>When:</b> September 2022 - October 2022
                     </Typography>
                     <Typography
                         component='li'
@@ -77,10 +81,26 @@ const Projects = () => {
                         color='textSecondary.main'
                         sx={{ maxWidth: '70%' }}
                     >
-                        <b>What is this project:</b> I'm currently building this
-                        using React, Redux, TypeScript, and Spotify API.{' '}
+                        <b>What is this project:</b> This is a web app that
+                        allows users to search information about their favorite
+                        albums, artists, playlists, or songs. I built this using
+                        React, Redux, TypeScript, and Spotify API.{' '}
                     </Typography>
                 </ul>
+                <Box sx={{ width: '70%', height: 'auto', mb: '1%' }}>
+                    <img
+                        src={require('../images/songsite_1.png')}
+                        alt='songsite'
+                        style={image}
+                    />
+                </Box>
+                <Box sx={{ width: '70%', height: 'auto', mb: '4%' }}>
+                    <img
+                        src={require('../images/songsite_2.png')}
+                        alt='songsite'
+                        style={image}
+                    />
+                </Box>
             </Box>
             <Box
                 sx={{
@@ -91,7 +111,7 @@ const Projects = () => {
                     ml: '6%',
                 }}
             >
-                <Typography variant='h4' color='textPrimary.main'>
+                <Typography variant='h3' color='textPrimary.main'>
                     BookApp
                 </Typography>
                 <ul>
@@ -131,6 +151,13 @@ const Projects = () => {
                         about some specific books.
                     </Typography>
                 </ul>
+                <Box sx={{ width: '70%', height: 'auto', mb: '4%' }}>
+                    <img
+                        src={require('../images/bookapp.png')}
+                        alt='songsite'
+                        style={image}
+                    />
+                </Box>
             </Box>
             <Box
                 sx={{
@@ -141,7 +168,7 @@ const Projects = () => {
                     ml: '6%',
                 }}
             >
-                <Typography variant='h4' color='textPrimary.main'>
+                <Typography variant='h3' color='textPrimary.main'>
                     Popular Science Blog Post
                 </Typography>
                 <ul>
@@ -187,9 +214,16 @@ const Projects = () => {
                         I highly recommend you to take a look at my blog post.
                     </Typography>
                 </ul>
+                <Box sx={{ width: '70%', height: 'auto' }}>
+                    <img
+                        src={require('../images/blogpost.png')}
+                        alt='songsite'
+                        style={image}
+                    />
+                </Box>
             </Box>
         </Box>
-    );
-};
+    )
+}
 
-export default Projects;
+export default Projects
