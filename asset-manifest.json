@@ -1,6 +1,7 @@
 {
   "files": {
-    "main.js": "/personal-portfolio/static/js/main.e22a6211.js",
+    "main.css": "/personal-portfolio/static/css/main.0febfc2c.css",
+    "main.js": "/personal-portfolio/static/js/main.dcf41169.js",
     "static/media/Can_you_prove_that_you're_a_human.pdf": "/personal-portfolio/static/media/Can_you_prove_that_you're_a_human.1ea19a92807aac214d8f.pdf",
     "static/media/avatar.jpeg": "/personal-portfolio/static/media/avatar.b5271b0d44068b87ab31.jpeg",
     "static/media/bookapp.png": "/personal-portfolio/static/media/bookapp.7f3dd58f47e156e1f72d.png",
@@ -9,9 +10,11 @@
     "static/media/songsite_1.png": "/personal-portfolio/static/media/songsite_1.8f7e9748c7891d1ad40d.png",
     "static/media/Luu_DucTri_CV.pdf": "/personal-portfolio/static/media/Luu_DucTri_CV.27859891f49e16a436e5.pdf",
     "index.html": "/personal-portfolio/index.html",
-    "main.e22a6211.js.map": "/personal-portfolio/static/js/main.e22a6211.js.map"
+    "main.0febfc2c.css.map": "/personal-portfolio/static/css/main.0febfc2c.css.map",
+    "main.dcf41169.js.map": "/personal-portfolio/static/js/main.dcf41169.js.map"
   },
   "entrypoints": [
-    "static/js/main.e22a6211.js"
+    "static/css/main.0febfc2c.css",
+    "static/js/main.dcf41169.js"
   ]
 }
