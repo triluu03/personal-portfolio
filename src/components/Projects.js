@@ -1,12 +1,36 @@
-import { Box, Typography, Link } from '@mui/material'
+import { Box, Typography, Card, CardActionArea } from '@mui/material'
 
-import BlogPost from "../PDF_files/Can_you_prove_that_you're_a_human.pdf"
+import { useState } from 'react'
+
+import EachProject from './EachProject'
 
 const Projects = () => {
-    const image = {
-        maxWidth: '100%',
-        height: 'auto',
-        borderRadius: '16px',
+    const [projects, setProjects] = useState('')
+
+    const styles = {
+        projectContainer: {
+            width: 350,
+            maxWidth: '25%',
+            aspectRatio: '2/1',
+            bgcolor: 'primary.main',
+            border: 3,
+            borderColor: 'secondary.main',
+            borderRadius: '16px',
+            m: '1.5%',
+            transitionDuration: '1s',
+            ':hover': {
+                bgcolor: 'secondary.main',
+            },
+        },
+        projectCardActions: {
+            width: '100%',
+            height: '100%',
+            p: '2%',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+        },
     }
 
     return (
@@ -14,6 +38,7 @@ const Projects = () => {
             sx={{
                 width: '100vw',
                 height: 'auto',
+                minHeight: '50vh',
                 bgcolor: 'primary.main',
                 display: 'flex',
                 flexDirection: 'column',
@@ -32,7 +57,7 @@ const Projects = () => {
                     variant='h3'
                     component='div'
                     color='textPrimary.main'
-                    sx={{ mt: '5%', mb: '3.5%' }}
+                    sx={{ mt: '5%', mb: '2.5%' }}
                     fontSize='3.5em'
                 >
                     My Projects
@@ -42,186 +67,94 @@ const Projects = () => {
                 sx={{
                     display: 'flex',
                     width: '100%',
-                    justifyContent: 'left',
-                    flexDirection: 'column',
-                    ml: '6%',
+                    justifyContent: 'center',
+                    flexDirection: 'row',
+                    mb: '2%',
                 }}
             >
-                <Typography variant='h3' color='textPrimary.main'>
-                    Songsite
-                </Typography>
-                <ul>
-                    <Typography
-                        component='li'
-                        variant='h6'
-                        color='textSecondary.main'
-                        sx={{ maxWidth: '70%' }}
+                <Card
+                    sx={{
+                        ...styles.projectContainer,
+                        bgcolor:
+                            projects === 'songsite'
+                                ? 'secondary.main'
+                                : 'primary.main',
+                    }}
+                >
+                    <CardActionArea
+                        sx={{ ...styles.projectCardActions }}
+                        onClick={() => setProjects('songsite')}
                     >
-                        <b>When:</b> September 2022 - October 2022
-                    </Typography>
-                    <Typography
-                        component='li'
-                        variant='h6'
-                        color='textSecondary.main'
-                        sx={{ maxWidth: '70%' }}
-                    >
-                        <b>Where:</b> You guys can check the source code of this
-                        app{' '}
-                        <Link
-                            href='https://github.com/triluu03/songsite'
-                            target='_blank'
-                            color='cardTitle.main'
+                        <Typography
+                            variant='h4'
+                            color='textPrimary.main'
+                            sx={{ mb: 1 }}
                         >
-                            here.
-                        </Link>
-                    </Typography>
-                    <Typography
-                        component='li'
-                        variant='h6'
-                        color='textSecondary.main'
-                        sx={{ maxWidth: '70%' }}
+                            Songsite
+                        </Typography>
+                        <Typography variant='body1' color='textSecondary.main'>
+                            React, Redux, TypeScript
+                        </Typography>
+                        <Typography variant='body1' color='textSecondary.main'>
+                            Material UI, Spotify API
+                        </Typography>
+                    </CardActionArea>
+                </Card>
+                <Card
+                    sx={{
+                        ...styles.projectContainer,
+                        bgcolor:
+                            projects === 'bookapp'
+                                ? 'secondary.main'
+                                : 'primary.main',
+                    }}
+                >
+                    <CardActionArea
+                        sx={{ ...styles.projectCardActions }}
+                        onClick={() => setProjects('bookapp')}
                     >
-                        <b>What is this project:</b> This is a web app that
-                        allows users to search information about their favorite
-                        albums, artists, playlists, or songs. I built this using
-                        React, Redux, TypeScript, and Spotify API.{' '}
-                    </Typography>
-                </ul>
-                <Box sx={{ width: '70%', height: 'auto', mb: '1%' }}>
-                    <img
-                        src={require('../images/songsite_1.png')}
-                        alt='songsite'
-                        style={image}
-                    />
-                </Box>
-                <Box sx={{ width: '70%', height: 'auto', mb: '4%' }}>
-                    <img
-                        src={require('../images/songsite_2.png')}
-                        alt='songsite'
-                        style={image}
-                    />
-                </Box>
-            </Box>
-            <Box
-                sx={{
-                    display: 'flex',
-                    width: '100%',
-                    justifyContent: 'left',
-                    flexDirection: 'column',
-                    ml: '6%',
-                }}
-            >
-                <Typography variant='h3' color='textPrimary.main'>
-                    BookApp
-                </Typography>
-                <ul>
-                    <Typography
-                        component='li'
-                        variant='h6'
-                        color='textSecondary.main'
-                        sx={{ maxWidth: '70%' }}
-                    >
-                        <b>When:</b> August 2022
-                    </Typography>
-                    <Typography
-                        component='li'
-                        variant='h6'
-                        color='textSecondary.main'
-                        sx={{ maxWidth: '70%' }}
-                    >
-                        <b>Where:</b> You guys can check the source code of this
-                        app{' '}
-                        <Link
-                            href='https://github.com/triluu03/bookapp'
-                            target='_blank'
-                            color='cardTitle.main'
+                        <Typography
+                            variant='h4'
+                            color='textPrimary.main'
+                            sx={{ mb: 1 }}
                         >
-                            here.
-                        </Link>
-                    </Typography>
-                    <Typography
-                        component='li'
-                        variant='h6'
-                        color='textSecondary.main'
-                        sx={{ maxWidth: '70%' }}
+                            BookApp
+                        </Typography>
+                        <Typography variant='body1' color='textSecondary.main'>
+                            React, Redux, Material UI
+                        </Typography>
+                        <Typography variant='body1' color='textSecondary.main'>
+                            Express, MongoDB
+                        </Typography>
+                    </CardActionArea>
+                </Card>
+                <Card
+                    sx={{
+                        ...styles.projectContainer,
+                        bgcolor:
+                            projects === 'blogpost'
+                                ? 'secondary.main'
+                                : 'primary.main',
+                    }}
+                >
+                    <CardActionArea
+                        sx={{ ...styles.projectCardActions }}
+                        onClick={() => setProjects('blogpost')}
                     >
-                        <b>What is this project:</b> This is my first project
-                        using React to build. The app is a platform for users to
-                        suggest books to each other and share their thoughts
-                        about some specific books.
-                    </Typography>
-                </ul>
-                <Box sx={{ width: '70%', height: 'auto', mb: '4%' }}>
-                    <img
-                        src={require('../images/bookapp.png')}
-                        alt='songsite'
-                        style={image}
-                    />
-                </Box>
-            </Box>
-            <Box
-                sx={{
-                    display: 'flex',
-                    width: '100%',
-                    justifyContent: 'left',
-                    flexDirection: 'column',
-                    ml: '6%',
-                }}
-            >
-                <Typography variant='h3' color='textPrimary.main'>
-                    Popular Science Blog Post
-                </Typography>
-                <ul>
-                    <Typography
-                        component='li'
-                        variant='h6'
-                        color='textSecondary.main'
-                        sx={{ maxWidth: '70%' }}
-                    >
-                        <b>When:</b> January 2022
-                    </Typography>
-                    <Typography
-                        component='li'
-                        variant='h6'
-                        color='textSecondary.main'
-                        sx={{ maxWidth: '70%' }}
-                    >
-                        <b>Where:</b> You guys can read the blog post{' '}
-                        <Link
-                            href={BlogPost}
-                            color='cardTitle.main'
-                            target='_blank'
+                        <Typography
+                            variant='h4'
+                            color='textPrimary.main'
+                            sx={{ mb: 1 }}
                         >
-                            here.
-                        </Link>
-                    </Typography>
-                    <Typography
-                        component='li'
-                        variant='h6'
-                        color='textSecondary.main'
-                        sx={{ maxWidth: '70%' }}
-                    >
-                        <b>What is this project:</b> This is a project I did
-                        when I was studying in a course at the university. We
-                        had to read a research paper and rewrite it into a
-                        popular science blog post. I read a research paper about{' '}
-                        <i>"Minimal Turing Test"</i>, and my blog post's title
-                        was:{' '}
-                        <b>
-                            A Minimal Turing Test: Can You Prove that You're a
-                            Human?
-                        </b>{' '}
-                        I highly recommend you to take a look at my blog post.
-                    </Typography>
-                </ul>
-                <Box sx={{ width: '70%', height: 'auto' }}>
-                    <img
-                        src={require('../images/blogpost.png')}
-                        alt='songsite'
-                        style={image}
-                    />
-                </Box>
+                            Blog Post
+                        </Typography>
+                        <Typography variant='body1' color='textSecondary.main'>
+                            Popular Science Blog Post
+                        </Typography>
+                    </CardActionArea>
+                </Card>
             </Box>
+            {projects === '' ? null : <EachProject project={projects} />}
         </Box>
     )
 }
