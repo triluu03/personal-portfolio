@@ -49,10 +49,11 @@ const BookApp = () => (
                 color='textSecondary.main'
                 sx={{ maxWidth: '70%' }}
             >
-                <b>What is this project:</b> This is my first project using
-                React to build. The app is a platform for users to suggest books
-                to each other and share their thoughts about some specific
-                books.
+                <b>What is this project:</b> This app is a platform for users to
+                suggest books to each other and share their thoughts about
+                specific books. This is my first project built by using{' '}
+                <span style={{ color: '#8FE3CF' }}>React, Redux, Express,</span>{' '}
+                and <span style={{ color: '#8FE3CF' }}>MongoDB.</span>{' '}
             </Typography>
         </ul>
         <Box sx={{ width: '70%', height: 'auto', mb: '4%' }}>

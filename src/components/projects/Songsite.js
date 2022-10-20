@@ -58,10 +58,13 @@ const Songsite = () => (
                 color='textSecondary.main'
                 sx={{ maxWidth: '70%' }}
             >
-                <b>What is this project:</b> This is a web app that allows users
-                to search information about their favorite albums, artists,
-                playlists, or songs. I built this using React, Redux,
-                TypeScript, and Spotify API.{' '}
+                <b>What is this project:</b> This is an app that allows users to
+                search information about their favorite albums, artists,
+                playlists, or songs. I built this using{' '}
+                <span style={{ color: '#8FE3CF' }}>
+                    React, Redux, TypeScript,
+                </span>{' '}
+                and <span style={{ color: '#8FE3CF' }}>Spotify API.</span>{' '}
             </Typography>
         </ul>
         <Box sx={{ width: '70%', height: 'auto', mb: '1%' }}>
