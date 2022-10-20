@@ -63,6 +63,7 @@ const Skills = () => {
                 sx={{
                     display: 'flex',
                     flexDirection: 'row',
+                    flexWrap: 'wrap',
                     justifyContent: 'center',
                 }}
             >

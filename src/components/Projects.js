@@ -2,15 +2,29 @@ import { Box, Typography, Card, CardActionArea } from '@mui/material'
 
 import { useState } from 'react'
 
-import EachProject from './EachProject'
+import Songsite from './projects/Songsite'
+import BookApp from './projects/BookApp'
+import BlogPost from './projects/BlogPost'
+
+const ProjectToShow = ({ project }) => {
+    switch (project) {
+        case 'songsite':
+            return <Songsite />
+        case 'bookapp':
+            return <BookApp />
+        case 'blogpost':
+            return <BlogPost />
+        default:
+            return null
+    }
+}
 
 const Projects = () => {
     const [projects, setProjects] = useState('')
 
     const styles = {
         projectContainer: {
-            width: 350,
-            maxWidth: '25%',
+            width: '25%',
             aspectRatio: '2/1',
             bgcolor: 'primary.main',
             border: 3,
@@ -38,10 +52,10 @@ const Projects = () => {
             sx={{
                 width: '100vw',
                 height: 'auto',
-                minHeight: '50vh',
                 bgcolor: 'primary.main',
                 display: 'flex',
                 flexDirection: 'column',
+                flexWrap: 'wrap',
                 pb: '5%',
             }}
             id='projects'
@@ -65,11 +79,12 @@ const Projects = () => {
             </Box>
             <Box
                 sx={{
+                    maxWidth: '100%',
                     display: 'flex',
-                    width: '100%',
                     justifyContent: 'center',
                     flexDirection: 'row',
-                    mb: '2%',
+                    flexWrap: 'wrap',
+                    mb: '12%',
                 }}
             >
                 <Card
@@ -154,7 +169,7 @@ const Projects = () => {
                     </CardActionArea>
                 </Card>
             </Box>
-            {projects === '' ? null : <EachProject project={projects} />}
+            {projects === '' ? null : <ProjectToShow project={projects} />}
         </Box>
     )
 }

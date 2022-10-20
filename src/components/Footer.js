@@ -3,7 +3,8 @@ import { Box, Typography, Link } from '@mui/material'
 const Footer = () => {
     const styles = {
         footerContainer: {
-            width: 100,
+            width: '25%',
+            minWidth: 100,
             height: 'auto',
             flexGrow: 1,
             ml: '2%',
@@ -26,8 +27,10 @@ const Footer = () => {
         >
             <Box
                 sx={{
+                    maxWidth: '100%',
                     display: 'flex',
                     justifyContent: 'center',
+                    flexWrap: 'wrap',
                     mt: '2%',
                     ml: '9%',
                 }}

@@ -15,9 +15,13 @@ import 'animate.css'
 
 const Education = () => {
     const style = {
+        width: '100vw',
+        height: 'auto',
+        bgcolor: 'secondary.main',
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'row',
+        flexWrap: 'wrap',
     }
 
     const timelineItemStyle = {
@@ -29,11 +33,8 @@ const Education = () => {
     }
 
     return (
-        <Box
-            sx={{ width: '100vw', height: 'auto', bgcolor: 'secondary.main' }}
-            style={style}
-        >
-            <Box sx={{ m: '5%', flexGrow: 1, maxWidth: '40%' }}>
+        <Box sx={{ ...style }}>
+            <Box sx={{ m: '5%', maxWidth: '40%' }}>
                 <Typography variant='h3' color='textPrimary.main'>
                     Educations
                 </Typography>
@@ -149,7 +150,7 @@ const Education = () => {
                 </Timeline>
             </Box>
 
-            <Box sx={{ m: '5%', flexGrow: 1, maxWidth: '40%' }}>
+            <Box sx={{ m: '5%', maxWidth: '40%' }}>
                 <Typography variant='h3' color='textPrimary.main'>
                     Extra-Curriculum
                 </Typography>
