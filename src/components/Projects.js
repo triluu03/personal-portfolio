@@ -5,6 +5,7 @@ import { useState } from 'react'
 import Songsite from './projects/Songsite'
 import BookApp from './projects/BookApp'
 import BlogPost from './projects/BlogPost'
+import CovidAnalysis from './projects/CovidAnalysis'
 
 const ProjectToShow = ({ project }) => {
     switch (project) {
@@ -14,6 +15,8 @@ const ProjectToShow = ({ project }) => {
             return <BookApp />
         case 'blogpost':
             return <BlogPost />
+        case 'covid_data_analysis':
+            return <CovidAnalysis />
         default:
             return null
     }
@@ -165,6 +168,65 @@ const Projects = () => {
                         </Typography>
                         <Typography variant='body1' color='textSecondary.main'>
                             Popular Science Blog Post
+                        </Typography>
+                    </CardActionArea>
+                </Card>
+            </Box>
+            <Box
+                sx={{
+                    maxWidth: '100%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexDirection: 'row',
+                    flexWrap: 'wrap',
+                    mb: '12%',
+                }}
+            >
+                <Card
+                    sx={{
+                        ...styles.projectContainer,
+                        bgcolor:
+                            projects === 'covid_data_analysis'
+                                ? 'secondary.main'
+                                : 'primary.main',
+                    }}
+                >
+                    <CardActionArea
+                        sx={{ ...styles.projectCardActions }}
+                        onClick={() => setProjects('covid_data_analysis')}
+                    >
+                        <Typography
+                            variant='h4'
+                            color='textPrimary.main'
+                            sx={{ mb: 1 }}
+                        >
+                            Data Analysis
+                        </Typography>
+                        <Typography variant='body1' color='textSecondary.main'>
+                            Covid-19 OWID Data
+                        </Typography>
+                        <Typography variant='body1' color='textSecondary.main'>
+                            PostgreSQL, R
+                        </Typography>
+                    </CardActionArea>
+                </Card>
+                <Card
+                    sx={{
+                        ...styles.projectContainer,
+                        bgcolor: 'primary.main',
+                    }}
+                >
+                    <CardActionArea
+                        sx={{ ...styles.projectCardActions }}
+                        // onClick={() => setProjects('')}
+                    >
+                        <Typography
+                            variant='h4'
+                            color='textPrimary.main'
+                            sx={{ mb: 1 }}
+                        ></Typography>
+                        <Typography variant='body1' color='textSecondary.main'>
+                            <i>More will be added soon!</i>
                         </Typography>
                     </CardActionArea>
                 </Card>
