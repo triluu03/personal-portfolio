@@ -1,10 +1,10 @@
 import { Box, Typography, Link } from '@mui/material'
 
-// const image = {
-//     maxWidth: '100%',
-//     height: 'auto',
-//     borderRadius: '16px',
-// }
+const image = {
+    maxWidth: '100%',
+    height: 'auto',
+    borderRadius: '16px',
+}
 
 const CovidAnalysis = () => (
     <Box
@@ -56,20 +56,20 @@ const CovidAnalysis = () => (
                 <span style={{ color: '#8FE3CF' }}>OWID Covid-19 Data</span>{' '}
             </Typography>
         </ul>
-        {/* <Box sx={{ width: '70%', height: 'auto', mb: '1%' }}>
+        <Box sx={{ width: '70%', height: 'auto', mb: '1%', ml: '2%' }}>
             <img
-                src={require('../../images/songsite_1.png')}
+                src={require('../../images/covid_analysis_1.png')}
                 alt='songsite'
                 style={image}
             />
         </Box>
-        <Box sx={{ width: '70%', height: 'auto', mb: '4%' }}>
+        <Box sx={{ width: '70%', height: 'auto', mb: '4%', ml: '2%' }}>
             <img
-                src={require('../../images/songsite_2.png')}
+                src={require('../../images/covid_analysis_2.png')}
                 alt='songsite'
                 style={image}
             />
-        </Box> */}
+        </Box>
     </Box>
 )
 
