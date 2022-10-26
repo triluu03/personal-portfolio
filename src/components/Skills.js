@@ -19,7 +19,6 @@ const Skills = () => {
             height: 100,
             borderRadius: '50%',
             border: 1,
-            // bgcolor: '#B8B8B8',
             mb: 1,
             display: 'flex',
             justifyContent: 'center',
@@ -132,7 +131,7 @@ const Skills = () => {
                         <Typography variant='h6'>Python</Typography>
                     </Box>
                 </Box>
-                {/* <Box sx={{ ...styles.skillContainer }}>
+                <Box sx={{ ...styles.skillContainer }}>
                     <Box
                         sx={{
                             ...styles.skillBox,
@@ -147,7 +146,7 @@ const Skills = () => {
                     <Box sx={{ ...styles.captionBox }}>
                         <Typography variant='h6'>R</Typography>
                     </Box>
-                </Box> */}
+                </Box>
                 <Box sx={{ ...styles.skillContainer }}>
                     <Box
                         sx={{
