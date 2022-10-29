@@ -116,7 +116,7 @@ const Education = () => {
                             color='cardTitle.main'
                             sx={{ flex: 0.2 }}
                         >
-                            2021-2024
+                            2021-present
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot color='cardTitle' />
@@ -138,11 +138,10 @@ const Education = () => {
                                     <b>University</b>
                                 </Typography>
                                 <Typography color='textSecondary.main'>
-                                    I am following 2 study tracks in the
-                                    university: Mathematics and Computer
-                                    Science. I'm gaining more and more interests
-                                    in Machine Learning and Artificial
-                                    Intelligence.
+                                    I am following the Computer Science and Data
+                                    Science study track in the university. I'm
+                                    gaining more and more interests in Machine
+                                    Learning and Artificial Intelligence.
                                 </Typography>
                             </Box>
                         </TimelineContent>
@@ -236,7 +235,7 @@ const Education = () => {
                             color='cardTitle.main'
                             sx={{ flex: 0.2 }}
                         >
-                            Jan 2019 - present
+                            Jan 2022 - Oct 2022
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot color='cardTitle' />
@@ -261,7 +260,7 @@ const Education = () => {
                                     color='textSecondary.main'
                                     sx={{ mt: 1 }}
                                 >
-                                    I serve as vice-member of student
+                                    I served as vice-member of student
                                     representatives, contributing to the
                                     development of our faculty (Faculty of
                                     Science).
