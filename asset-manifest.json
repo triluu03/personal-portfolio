@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.0febfc2c.css",
-    "main.js": "/personal-portfolio/static/js/main.9f78537a.js",
+    "main.js": "/personal-portfolio/static/js/main.38d1f427.js",
     "static/media/Can_you_prove_that_you're_a_human.pdf": "/personal-portfolio/static/media/Can_you_prove_that_you're_a_human.1ea19a92807aac214d8f.pdf",
     "static/media/avatar.jpeg": "/personal-portfolio/static/media/avatar.b5271b0d44068b87ab31.jpeg",
     "static/media/bookapp.png": "/personal-portfolio/static/media/bookapp.7f3dd58f47e156e1f72d.png",
@@ -10,13 +10,13 @@
     "static/media/songsite_1.png": "/personal-portfolio/static/media/songsite_1.8f7e9748c7891d1ad40d.png",
     "static/media/covid_analysis_2.png": "/personal-portfolio/static/media/covid_analysis_2.4c43cea4b21d541066a8.png",
     "static/media/covid_analysis_1.png": "/personal-portfolio/static/media/covid_analysis_1.ac66f17201eacbb23ae1.png",
-    "static/media/Luu_DucTri_CV.pdf": "/personal-portfolio/static/media/Luu_DucTri_CV.27859891f49e16a436e5.pdf",
+    "static/media/Luu_DucTri_CV.pdf": "/personal-portfolio/static/media/Luu_DucTri_CV.390675b3cbfb3288d192.pdf",
     "index.html": "/personal-portfolio/index.html",
     "main.0febfc2c.css.map": "/personal-portfolio/static/css/main.0febfc2c.css.map",
-    "main.9f78537a.js.map": "/personal-portfolio/static/js/main.9f78537a.js.map"
+    "main.38d1f427.js.map": "/personal-portfolio/static/js/main.38d1f427.js.map"
   },
   "entrypoints": [
     "static/css/main.0febfc2c.css",
-    "static/js/main.9f78537a.js"
+    "static/js/main.38d1f427.js"
   ]
 }
