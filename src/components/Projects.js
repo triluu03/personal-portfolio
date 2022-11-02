@@ -1,4 +1,4 @@
-import { Box, Typography, Card, CardActionArea } from '@mui/material'
+import { Box, Typography, Card, CardActionArea, Button } from '@mui/material'
 
 import { useState } from 'react'
 
@@ -89,6 +89,7 @@ const Projects = () => {
                     flexWrap: 'wrap',
                     mb: '12%',
                 }}
+                id='showing_project'
             >
                 <Card
                     sx={{
@@ -231,7 +232,107 @@ const Projects = () => {
                     </CardActionArea>
                 </Card>
             </Box>
-            {projects === '' ? null : <ProjectToShow project={projects} />}
+            <Box>
+                {projects === '' ? null : <ProjectToShow project={projects} />}
+            </Box>
+            <Box
+                sx={{
+                    width: '100vw',
+                    height: 'auto',
+                    alignContent: 'right',
+                    textAlign: 'right',
+                    display: projects === '' ? 'none' : 'block',
+                }}
+            >
+                <Button
+                    color='cardTitle'
+                    variant='outlined'
+                    sx={{
+                        mr: '2%',
+                        '&:disabled': {
+                            color: 'cardTitle.main',
+                            border: 1,
+                            opacity: 0.5,
+                        },
+                    }}
+                    size='large'
+                    disabled={projects === 'songsite' ? true : false}
+                    onClick={() => {
+                        setProjects('songsite')
+                        document
+                            .getElementById('showing_project')
+                            .scrollIntoView()
+                    }}
+                >
+                    Songsite
+                </Button>
+                <Button
+                    color='cardTitle'
+                    variant='outlined'
+                    sx={{
+                        mr: '2%',
+                        '&:disabled': {
+                            color: 'cardTitle.main',
+                            border: 1,
+                            opacity: 0.5,
+                        },
+                    }}
+                    size='large'
+                    disabled={projects === 'bookapp' ? true : false}
+                    onClick={() => {
+                        setProjects('bookapp')
+                        document
+                            .getElementById('showing_project')
+                            .scrollIntoView()
+                    }}
+                >
+                    BookApp
+                </Button>
+                <Button
+                    color='cardTitle'
+                    variant='outlined'
+                    sx={{
+                        mr: '2%',
+                        '&:disabled': {
+                            color: 'cardTitle.main',
+                            border: 1,
+                            opacity: 0.5,
+                        },
+                    }}
+                    size='large'
+                    disabled={projects === 'covid_data_analysis' ? true : false}
+                    onClick={() => {
+                        setProjects('covid_data_analysis')
+                        document
+                            .getElementById('showing_project')
+                            .scrollIntoView()
+                    }}
+                >
+                    Covid-19 Analysis
+                </Button>
+                <Button
+                    color='cardTitle'
+                    variant='outlined'
+                    sx={{
+                        mr: '5%',
+                        '&:disabled': {
+                            color: 'cardTitle.main',
+                            border: 1,
+                            opacity: 0.5,
+                        },
+                    }}
+                    size='large'
+                    disabled={projects === 'blogpost' ? true : false}
+                    onClick={() => {
+                        setProjects('blogpost')
+                        document
+                            .getElementById('showing_project')
+                            .scrollIntoView()
+                    }}
+                >
+                    Blog Post
+                </Button>
+            </Box>
         </Box>
     )
 }
