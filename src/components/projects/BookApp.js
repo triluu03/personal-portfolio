@@ -59,7 +59,7 @@ const BookApp = () => (
         <Box sx={{ width: '70%', height: 'auto', mb: '4%' }}>
             <img
                 src={require('../../images/bookapp.png')}
-                alt='songsite'
+                alt='bookapp'
                 style={image}
             />
         </Box>

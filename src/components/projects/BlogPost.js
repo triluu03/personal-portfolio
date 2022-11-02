@@ -62,7 +62,7 @@ const BlogPost = () => (
         <Box sx={{ width: '70%', height: 'auto', mb: '4%' }}>
             <img
                 src={require('../../images/blogpost.png')}
-                alt='songsite'
+                alt='blogpost'
                 style={image}
             />
         </Box>

@@ -59,14 +59,14 @@ const CovidAnalysis = () => (
         <Box sx={{ width: '70%', height: 'auto', mb: '1%', ml: '2%' }}>
             <img
                 src={require('../../images/covid_analysis_1.png')}
-                alt='songsite'
+                alt='covid_analysis_1'
                 style={image}
             />
         </Box>
         <Box sx={{ width: '70%', height: 'auto', mb: '4%', ml: '2%' }}>
             <img
                 src={require('../../images/covid_analysis_2.png')}
-                alt='songsite'
+                alt='covid_analysis_2'
                 style={image}
             />
         </Box>

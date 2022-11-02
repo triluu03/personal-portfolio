@@ -1,4 +1,4 @@
-import { Box, Typography, Card, CardActionArea, Button } from '@mui/material'
+import { Box, Typography, Card, CardActionArea } from '@mui/material'
 
 import { useState } from 'react'
 
@@ -235,7 +235,7 @@ const Projects = () => {
             <Box>
                 {projects === '' ? null : <ProjectToShow project={projects} />}
             </Box>
-            <Box
+            {/* <Box
                 sx={{
                     width: '100vw',
                     height: 'auto',
@@ -332,7 +332,7 @@ const Projects = () => {
                 >
                     Blog Post
                 </Button>
-            </Box>
+            </Box> */}
         </Box>
     )
 }
