@@ -38,10 +38,29 @@ const Footer = () => {
                 <Box sx={{ ...styles.footerContainer }}>
                     <Typography color='textSecondary.main'>Email</Typography>
                     <Typography color='textPrimary.main'>
-                        tri.luu@helsinki.fi
+                        <Link
+                            href='mailto:tri.luu@helsinki.fi'
+                            target='_blank'
+                            color='textPrimary.main'
+                            sx={{
+                                ':hover': { color: 'cardTitle.main' },
+                            }}
+                        >
+                            tri.luu@helsinki.fi
+                        </Link>
                     </Typography>
+
                     <Typography color='textPrimary.main'>
-                        triluu.1802@gmail.com
+                        <Link
+                            href='mailto:ductriluu.work@gmail.com'
+                            target='_blank'
+                            color='textPrimary.main'
+                            sx={{
+                                ':hover': { color: 'cardTitle.main' },
+                            }}
+                        >
+                            ductriluu.work@gmail.com
+                        </Link>
                     </Typography>
                 </Box>
                 <Box sx={{ ...styles.footerContainer }}>
