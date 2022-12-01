@@ -55,7 +55,7 @@ const Skills = () => {
                 }}
             >
                 <Typography variant='h3' color='textPrimary.main'>
-                    Coding Languages Competence
+                    Coding Competency
                 </Typography>
             </Box>
             <Box

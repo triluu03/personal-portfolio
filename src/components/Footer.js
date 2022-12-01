@@ -106,7 +106,7 @@ const Footer = () => {
                 }}
             >
                 <Typography color='textSecondary.main' sx={{ mt: '2%' }}>
-                    © This website is built all by Tri Luu
+                    © This website is designed and built all by Tri Luu
                 </Typography>
             </Box>
         </Box>

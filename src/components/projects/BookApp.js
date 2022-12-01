@@ -26,7 +26,17 @@ const BookApp = () => (
                 color='textSecondary.main'
                 sx={{ maxWidth: '70%' }}
             >
-                <b>When:</b> August 2022
+                <b>When:</b> August 2022 - <i>extending</i>
+            </Typography>
+            <Typography
+                component='li'
+                variant='h6'
+                color='textSecondary.main'
+                sx={{ maxWidth: '70%' }}
+            >
+                <b>Extension:</b> I am building another backend using{' '}
+                <span style={{ color: '#8FE3CF' }}>Django</span> and{' '}
+                <span style={{ color: '#8FE3CF' }}>PostgreSQL.</span>
             </Typography>
             <Typography
                 component='li'
@@ -52,7 +62,9 @@ const BookApp = () => (
                 <b>What is this project:</b> This app is a platform for users to
                 suggest books to each other and share their thoughts about
                 specific books. This is my first project built by using{' '}
-                <span style={{ color: '#8FE3CF' }}>React, Redux, Express,</span>{' '}
+                <span style={{ color: '#8FE3CF' }}>
+                    React, Redux, NodeJS, Express,
+                </span>{' '}
                 and <span style={{ color: '#8FE3CF' }}>MongoDB.</span>{' '}
             </Typography>
         </ul>
