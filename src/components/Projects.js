@@ -1,30 +1,8 @@
-import { Box, Typography, Card, CardActionArea } from '@mui/material'
+import { Box, Typography, Card, CardActionArea } from '@mui/material';
 
-import { useState } from 'react'
-
-import Songsite from './projects/Songsite'
-import BookApp from './projects/BookApp'
-import BlogPost from './projects/BlogPost'
-import CovidAnalysis from './projects/CovidAnalysis'
-
-const ProjectToShow = ({ project }) => {
-    switch (project) {
-        case 'songsite':
-            return <Songsite />
-        case 'bookapp':
-            return <BookApp />
-        case 'blogpost':
-            return <BlogPost />
-        case 'covid_data_analysis':
-            return <CovidAnalysis />
-        default:
-            return null
-    }
-}
+import file from "../PDF_files/Can_you_prove_that_you're_a_human.pdf";
 
 const Projects = () => {
-    const [projects, setProjects] = useState('')
-
     const styles = {
         projectContainer: {
             width: '25%',
@@ -48,7 +26,7 @@ const Projects = () => {
             justifyContent: 'center',
             alignItems: 'center',
         },
-    }
+    };
 
     return (
         <Box
@@ -93,20 +71,62 @@ const Projects = () => {
                 <Card
                     sx={{
                         ...styles.projectContainer,
-                        bgcolor:
-                            projects === 'songsite'
-                                ? 'secondary.main'
-                                : 'primary.main',
                     }}
                 >
                     <CardActionArea
                         sx={{ ...styles.projectCardActions }}
-                        onClick={() => {
-                            setProjects('songsite')
-                            document
-                                .getElementById('showing_project')
-                                .scrollIntoView({ behavior: 'smooth' })
-                        }}
+                        href='https://drive.google.com/file/d/1rTxvQp_ezQNUbith-wdwnnjW5OZqdHgS/view'
+                        target='_blank'
+                    >
+                        <Typography
+                            variant='h5'
+                            color='textPrimary.main'
+                            sx={{ mb: 1 }}
+                        >
+                            Predicting Vapor Pressure
+                        </Typography>
+                        <Typography variant='body1' color='textSecondary.main'>
+                            Predicting vapor pressure of atmospheric
+                        </Typography>
+                        <Typography variant='body1' color='textSecondary.main'>
+                            molecules using R and Machine Learning.
+                        </Typography>
+                    </CardActionArea>
+                </Card>
+                <Card
+                    sx={{
+                        ...styles.projectContainer,
+                    }}
+                >
+                    <CardActionArea
+                        sx={{ ...styles.projectCardActions }}
+                        href='https://drive.google.com/file/d/1H9Vzy7M9NNZ1TD8wVHIEul_PXut7qw-l/view'
+                        target='_blank'
+                    >
+                        <Typography
+                            variant='h4'
+                            color='textPrimary.main'
+                            sx={{ mb: 1 }}
+                        >
+                            Data Science
+                        </Typography>
+                        <Typography variant='body1' color='textSecondary.main'>
+                            Predictive Analysis of Natural Disasters
+                        </Typography>
+                        <Typography variant='body1' color='textSecondary.main'>
+                            based on Climate Patterns.
+                        </Typography>
+                    </CardActionArea>
+                </Card>
+                <Card
+                    sx={{
+                        ...styles.projectContainer,
+                    }}
+                >
+                    <CardActionArea
+                        sx={{ ...styles.projectCardActions }}
+                        href='https://triluu03.github.io/songsite/'
+                        target='_blank'
                     >
                         <Typography
                             variant='h4'
@@ -120,69 +140,6 @@ const Projects = () => {
                         </Typography>
                         <Typography variant='body1' color='textSecondary.main'>
                             Material UI, Spotify API
-                        </Typography>
-                    </CardActionArea>
-                </Card>
-                <Card
-                    sx={{
-                        ...styles.projectContainer,
-                        bgcolor:
-                            projects === 'bookapp'
-                                ? 'secondary.main'
-                                : 'primary.main',
-                    }}
-                >
-                    <CardActionArea
-                        sx={{ ...styles.projectCardActions }}
-                        onClick={() => {
-                            setProjects('bookapp')
-                            document
-                                .getElementById('showing_project')
-                                .scrollIntoView({ behavior: 'smooth' })
-                        }}
-                    >
-                        <Typography
-                            variant='h4'
-                            color='textPrimary.main'
-                            sx={{ mb: 1 }}
-                        >
-                            BookApp
-                        </Typography>
-                        <Typography variant='body1' color='textSecondary.main'>
-                            React, Redux, Material UI
-                        </Typography>
-                        <Typography variant='body1' color='textSecondary.main'>
-                            Express, MongoDB
-                        </Typography>
-                    </CardActionArea>
-                </Card>
-                <Card
-                    sx={{
-                        ...styles.projectContainer,
-                        bgcolor:
-                            projects === 'blogpost'
-                                ? 'secondary.main'
-                                : 'primary.main',
-                    }}
-                >
-                    <CardActionArea
-                        sx={{ ...styles.projectCardActions }}
-                        onClick={() => {
-                            setProjects('blogpost')
-                            document
-                                .getElementById('showing_project')
-                                .scrollIntoView({ behavior: 'smooth' })
-                        }}
-                    >
-                        <Typography
-                            variant='h4'
-                            color='textPrimary.main'
-                            sx={{ mb: 1 }}
-                        >
-                            Blog Post
-                        </Typography>
-                        <Typography variant='body1' color='textSecondary.main'>
-                            Popular Science Blog Post
                         </Typography>
                     </CardActionArea>
                 </Card>
@@ -200,33 +157,22 @@ const Projects = () => {
                 <Card
                     sx={{
                         ...styles.projectContainer,
-                        bgcolor:
-                            projects === 'covid_data_analysis'
-                                ? 'secondary.main'
-                                : 'primary.main',
                     }}
                 >
                     <CardActionArea
                         sx={{ ...styles.projectCardActions }}
-                        onClick={() => {
-                            setProjects('covid_data_analysis')
-                            document
-                                .getElementById('showing_project')
-                                .scrollIntoView({ behavior: 'smooth' })
-                        }}
+                        href={file}
+                        target='_blank'
                     >
                         <Typography
                             variant='h4'
                             color='textPrimary.main'
                             sx={{ mb: 1 }}
                         >
-                            Data Analysis
+                            Blog Post
                         </Typography>
                         <Typography variant='body1' color='textSecondary.main'>
-                            Covid-19 OWID Data
-                        </Typography>
-                        <Typography variant='body1' color='textSecondary.main'>
-                            PostgreSQL, R
+                            Popular Science Blog Post
                         </Typography>
                     </CardActionArea>
                 </Card>
@@ -251,11 +197,8 @@ const Projects = () => {
                     </CardActionArea>
                 </Card>
             </Box>
-            <Box id='showing_project'>
-                {projects === '' ? null : <ProjectToShow project={projects} />}
-            </Box>
         </Box>
-    )
-}
+    );
+};
 
-export default Projects
+export default Projects;

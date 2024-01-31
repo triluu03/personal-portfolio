@@ -1,11 +1,11 @@
-import { Box, Typography } from '@mui/material'
-import { TypeAnimation } from 'react-type-animation'
+import { Box, Typography } from '@mui/material';
+import { TypeAnimation } from 'react-type-animation';
 
 const styles = {
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
-}
+};
 
 const Header = () => {
     return (
@@ -47,7 +47,7 @@ const Header = () => {
                         1000,
                         `I'm a self-learner`,
                         1000,
-                        `I'm a full stack developer`,
+                        `I'm a data scientist`,
                         1000,
                         `I'm a programmer`,
                         1000,
@@ -58,7 +58,7 @@ const Header = () => {
                 />
             </Typography>
         </Box>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;
